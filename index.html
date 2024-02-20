@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu Apartamento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Anuncie seu apartamento na nossa página</h2>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <span>Formulário de Cadastro</span>
+            </div>
+            <div class="form-body">
+               <h1 class="form-title">Venda seu apartamento conosco</h1> 
+               <p>
+                Descreva as características do seu apartamento e marque os opcionais que ele possui.
+               </p>
+               <form>
+                <div class="box-input">
+                    <label for="title">Título do anúncio <span class="required-field">*</span></label>
+                    <input 
+                    type="text"
+                    name="title" 
+                    id="title" 
+                    class="block" 
+                    placeholder="Um título para anunciar seu apartamento"
+                    minlength="1"
+                    maxlength="30"
+                    required
+                    />
+                </div>
+                <div class="box-input">
+                    <label for="price">Preço <span class="required-field">*</span></label>
+                    <input 
+                    type="number"
+                    name="price" 
+                    id="price" 
+                    class="block" 
+                    placeholder="Defina o Preço"
+                    required
+                    />
+                 </div>
+                 <div class="box-input">
+                    <label for="description">Descrição <span class="required-field">*</span></label>
+                    <textarea name="description" id="description" class="block" placeholder="Aqui voce coloca os detalhes apartamento, por exemplo se ele tem alguma modificação" ></textarea>
+                </div>
+                <div class="box-input">
+                    <label for="State City">Estado/Cidade <span class="required-field">*</span></label>
+                    <input 
+                    type="text"
+                    name="State City" 
+                    id="State City" 
+                    class="block" 
+                    placeholder="Digite o Estado e cidade do apartamento"
+                    required
+                    />
+                 </div>
+                 <div class="box-input">
+                    <label for="address">Endereço completo<span class="required-field">*</span></label>
+                    <input 
+                    type="text"
+                    name="address" 
+                    id="address" 
+                    class="block" 
+                    placeholder="Digite o endereço completo do seu apartamento"
+                    required
+                    />
+                 </div>
+                 <div class="box-input">
+                    <label for="area of ​​the property">Área do Imóvel  <span class="required-field">*</span></label>
+                    <input 
+                    type="text"
+                    name="area of ​​the property" 
+                    id="area of ​​the property" 
+                    class="block" 
+                    placeholder="Digite a Área do seu Imovel"
+                    required
+                    />
+                </div>
+                <div class="box-input">
+                    <label for="Construction year">Ano de construção<span class="required-field">*</span></label>
+                    <input 
+                    type="date"
+                    name="Construction year" 
+                    id="Construction year" 
+                    class="block" 
+                    required
+                    />
+                 </div>
+                 <div class="optional-box">
+                    <p> Itens do apartamento </p>
+                    <ul class="optional-list">
+                        <li>
+                           <input 
+                           type="checkbox" 
+                           id="air conditioning" 
+                           name="optional[]" 
+                           value="air conditioning">
+                           <label for="air conditioning">Ar condicionado</label> 
+                        </li>
+                        <li>
+                            <input 
+                            type="checkbox" 
+                            id="kitchen items" 
+                            name="optional[]" 
+                            value="kitchen items">
+                            <label for="kitchen items">Itens de Cozinha</label> 
+                         </li>
+                         <li>
+                            <input 
+                            type="checkbox" 
+                            id="bathtub" 
+                            name="optional[]" 
+                            value="bathtub">
+                            <label for="bathtub">Banheira</label> 
+                         </li>
+                         <li>
+                            <input 
+                            type="checkbox" 
+                            id="Wi-fi" 
+                            name="optional[]" 
+                            value="Wi-fi">
+                            <label for="Wi-fi">Wi-fi</label> 
+                         </li>
+                    </ul>
+                 </div>
+                 <div class="box-input">
+                    <label for="other">Descreva outros itens do seu apartamento <span class="required-field">*</span></label>
+                    <textarea name="other" id="other" class="block" placeholder="Aqui voce coloca outros itens do seu apartamento"></textarea>
+                </div> 
+                <div class="box-input">
+                    <p>Fotos do Apartamento: <span class="required-field">*</span></p>
+                    <input 
+                     type="file"
+                     multiple 
+                     accept="image/png, image/jpg"
+                     id="images"
+                     name="images"
+                     required 
+                     />                    
+                 </div> 
+                 <input type="submit" value="Enviar" class="btn-submit">
+               </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
